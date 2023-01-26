@@ -32,7 +32,7 @@ body{
 .display-users{
     display: flex;
     width: 87vw;
-    height: 94vh;
+    height: 95vh;
     border-style: dotted;
     border-color: white;
     flex-direction: column;
@@ -90,8 +90,51 @@ body{
 
 
 .footer-container{
-    width: 300px;
+    display: flex;
+    align-items: center;
     height: 100%;
-    border-style: dotted;
-    border-color: white;
+    color: white;
+    justify-content: space-between;
+}
+
+
+#microphone{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    font-size: 12px;
+    padding: 10px;
+}
+
+i.fa-solid.fa-microphone {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+#microphone p{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+#videocam{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+i.fa-solid.fa-video {
+    align-self: center;
+    font-size: 30px;
+}
+
+#videocam p{
+    font-size: 16px;
+    margin-left: 5px;
+    white-space: nowrap;
 }
