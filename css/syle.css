@@ -8,13 +8,90 @@
     display: flex;
     width: 100vw;
     height: 30px;
-    background-color: black;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 #btn-header{
-    width: 30px;
+    width: 300px;
     height: 30px;
+    border-style: dotted;
+    border-color: white;
+    margin-right: 20px;
+}
+body{
+    background-color: black;
+}
+
+.main-body{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.display-users{
+    display: flex;
+    width: 87vw;
+    height: 94vh;
+    border-style: dotted;
+    border-color: white;
+    flex-direction: column;
+}
+.usersrow1{
+    display: flex;
+    align-self: row;
+    flex-wrap: nowrap;
+}
+
+.usersrow2{
+    display: flex;
+    align-self: row;
+    flex-wrap: nowrap;
+}
+
+.usersrow3{
+    display: flex;
+    align-self: row;
+    flex-wrap: nowrap;
+}
+
+.usersrow4{
+    display: flex;
+    align-self: row;
+    flex-wrap: nowrap;
+}
+.usersrow5{
+    display: flex;
+    align-self: row;
+    flex-wrap: nowrap;
+}
+
+
+.user{
+    width: calc(100vw / 8);
+    height: calc(100vh / 6);
+    border-style: dotted;
+    border-color: aliceblue;
+    background-image: url(https://picsum.photos/id/11/200/300);
+    background-size:calc(100vw / 8) calc(100vh / 6)  ;
+    background-repeat: no-repeat;
+    margin: 10px 5px;
+}
+
+.footer{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: grey;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-container{
+    width: 300px;
+    height: 100%;
     border-style: dotted;
     border-color: white;
 }
