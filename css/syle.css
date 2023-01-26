@@ -33,8 +33,6 @@ body{
     display: flex;
     width: 87vw;
     height: 95vh;
-    border-style: dotted;
-    border-color: white;
     flex-direction: column;
 }
 .usersrow1{
@@ -70,19 +68,43 @@ body{
 .user{
     width: calc(100vw / 8);
     height: calc(100vh / 6);
-    border-style: dotted;
-    border-color: aliceblue;
     background-image: url(https://picsum.photos/id/11/200/300);
     background-size:calc(100vw / 8) calc(100vh / 6)  ;
     background-repeat: no-repeat;
     margin: 10px 5px;
+    position: relative;
+}
+.nametag{
+    display: flex;
+    width: 60%;
+    height: 30px;
+    background-color: rgb(109, 107, 107, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex-wrap: nowrap;
+    color: white;
+    
+}
+
+main p{
+    white-space: nowrap;
+    align-self: center;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+main i{
+    font-size: 24px;
+    align-self: center;
+    margin-left: 5px;
 }
 
 .footer{
     display: flex;
     height: 10vh;
     width: 100vw;
-    background-color: grey;
+    background-color: rgb(31, 30, 30);
     margin-top: 40px;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +129,7 @@ body{
     padding: 10px;
 }
 
-i.fa-solid.fa-microphone {
+.footer .fa-solid.fa-microphone{
     margin-left: 10px;
     font-size: 30px;
 }
@@ -128,13 +150,38 @@ i.fa-solid.fa-microphone {
     
 }
 
-i.fa-solid.fa-video {
+.footer i {
     align-self: center;
     font-size: 30px;
 }
 
-#videocam p{
+.footer p{
     font-size: 16px;
     margin-left: 5px;
     white-space: nowrap;
+    padding: 5px;
+}
+
+.fa-share-from-square:before, .fa-share-square:before {
+    content: "\f14d";
+    color: green;
+}
+
+.fa-chevron-up:before {
+    content: "\f077";
+    font-size: 20px;
+    align-self: center;
+}
+
+.footer-containerright{
+    display: flex;
+    width: 300px;
+    height: 100%;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: red;
 }
